@@ -69,6 +69,29 @@ public class IGRPhotoTweakView: UIView {
         }
     }
     
+    public var zoomScale:CGFloat {
+        set {
+            self.scrollView.zoomScale = newValue
+        }
+        get {
+            return self.scrollView.zoomScale
+        }
+    }
+    
+    public var cropViewFrame: CGRect {
+        set {
+            self.cropView.frame = newValue
+        }
+        get {
+            return self.cropView.frame
+        }
+    }
+    
+    public func reCenterScrollViewFrame() {
+        
+        self.updatePosition()
+        
+    }
     //MARK: - Private VARs
     
     internal var radians: CGFloat       = CGFloat.zero

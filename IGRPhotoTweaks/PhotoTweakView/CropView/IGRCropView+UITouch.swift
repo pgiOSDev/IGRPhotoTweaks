@@ -10,15 +10,15 @@ import Foundation
 
 extension IGRCropView {
     override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if touches.count == 1 {
+       /* if touches.count == 1 {
             self.updateCropLines(animate: false)
         }
         
-        self.delegate?.cropViewDidStartCrop(self)
+        self.delegate?.cropViewDidStartCrop(self)*/
     }
     
     override public func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if touches.count == 1 {
+        /*if touches.count == 1 {
             let location: CGPoint = (touches.first?.location(in: self))!
             var frame: CGRect = self.frame
             
@@ -81,14 +81,14 @@ extension IGRCropView {
                 
                 self.delegate?.cropViewDidMove(self)
             }
-        }
+        }*/
     }
     
     override public func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.delegate?.cropViewDidStopCrop(self)
+       // self.delegate?.cropViewDidStopCrop(self)
     }
     
     override public func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.delegate?.cropViewDidStopCrop(self)
+        //self.delegate?.cropViewDidStopCrop(self)
     }
 }

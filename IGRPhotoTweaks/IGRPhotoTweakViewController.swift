@@ -50,7 +50,7 @@ open class IGRPhotoTweakViewController: UIViewController {
         let photoView = IGRPhotoTweakView(frame: self.view.bounds,
                                           image: self.image,
                                           customizationDelegate: self)
-        photoView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        //photoView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         self.view.addSubview(photoView)
         
         return photoView

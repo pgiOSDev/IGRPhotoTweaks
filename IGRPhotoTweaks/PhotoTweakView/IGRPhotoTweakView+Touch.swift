@@ -16,7 +16,7 @@ extension IGRPhotoTweakView {
             !self.cropView.frame.insetBy(dx: kCropViewHotArea,
                                          dy: kCropViewHotArea).contains(point) {
             
-            return self.cropView
+            //return self.cropView
         }
         
         return self.scrollView
